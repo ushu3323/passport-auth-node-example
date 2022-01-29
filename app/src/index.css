@@ -1,0 +1,119 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #000;
+  --color-primary: #ffd04e;
+}
+
+body {
+  background-color: rgba(250,250,250,1);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.register {
+  padding: 3em;
+  width: 80%;
+  margin: auto;
+}
+
+.description {
+  /* background-color: lightcoral; */
+  display: inline-block;
+  width: 50%;
+}
+
+.register-form {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  float: right;
+
+  width: 350px;
+  padding-top: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+
+  /* background-color: lightblue; */
+}
+
+.register-input-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0px;
+  /* background-color: aquamarine; */
+}
+
+.separator {
+  height: 0;
+  width: 70%;
+  margin: 0 auto;
+  border-bottom: 2px dashed gray;
+  margin-bottom: 30px;
+}
+
+.separator > p {
+  position: relative;
+  top: -8px;
+  background-color: #fff;
+  width: 135px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.register-input {
+  /* display: block; */
+  /*
+  width: 250px;
+  height: 40px;
+  padding-left: 8px;
+  border: 0.009px solid black;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  */
+}
+
+.thirdparty-auth-options {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-google::before {
+  content: "";
+  background-image: url("../public/login-icon-google.svg");
+  background-color: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 48px;
+  width: 48px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+.auth-google {
+  vertical-align: middle;
+  position: relative;
+  overflow: hidden;
+  padding-left: 48px;
+  min-height: 48px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  
+  color: white;
+  background: rgb(70, 136, 241) none repeat scroll 0% 0%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px;
+}

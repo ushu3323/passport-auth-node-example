@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../src/ui.css">
+  <link href="../src/index.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="register">
+      <div class="description">
+        <h1>Bienvenido</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Laboriosam perspiciatis exercitationem eius aspernatur
+          similique at ratione vitae corporis sit provident temporibus
+          unde distinctio nam sapiente dolore quibusdam minus, iure in.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam velit corporis explicabo, ea dolorem
+          blanditiis necessitatibus ducimus eius! Est quis sint doloribus aliquid. Vitae cupiditate laboriosam earum
+          facilis sed quod!
+        </p>
+      </div>
+      <form class="register-form" id="form" onsubmit="obtenerDatos(event)">
+        <h2>Crea una cuenta</h2>
+        <div class="register-input-container">
+          <input class="register-input text-input" name="name" type="text" placeholder="Nombre" id="name" required>
+          <input class="register-input text-input" name="surname" type="text" placeholder="Apellido" id="name" required>
+          <input class="register-input text-input" name="email" type="email" placeholder="Email" id="email" required>
+          <input class="register-input text-input" name="numberPhone" type="tel" placeholder="Telefono" id="telefono" required>
+          <input class="register-input text-input" name="username" type="text" placeholder="Username" id="username" required>
+          <input class="register-input text-input" name="password" type="password" placeholder="Contraseña" id="pass" required>
+          <input class="round-button register-input submit-input" type="submit" value="Registrarse">
+        </div>
+        <div class="separator">
+          <p>O registrate con</p>
+        </div>
+        <div class="thirdparty-auth-options">
+          <button class="round-button auth-google" type="button">Google</button>
+        </div>
+        <p class="message"></p>
+      </form>
+    </div>
+  </div>
+</body>
+<script src="../src/index.js"></script>
+
+</html>

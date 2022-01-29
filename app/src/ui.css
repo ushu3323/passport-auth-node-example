@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: rgb(68, 68, 68);
+  --color-primary: #ffd04e;
+}
+
+.text-input, .submit-input, .round-button {
+  width: 250px;
+  height: 40px;
+  border: medium none;
+  border-radius: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+}
+
+.text-input:focus {
+  border-color: var(--color-primary);
+  outline: var(--color-primary) solid 1px;
+}
+
+.text-input {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  padding-left: 10px;
+  border: 1px solid rgb(200, 200, 200);
+  outline: none;
+}
+
+.submit-input {
+
+}
+
+
+.round-button {
+  cursor: pointer;
+  background-color: var(--color-primary);
+  color: var(--main-color);
+  font-size: 18px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+
+
