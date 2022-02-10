@@ -17,5 +17,27 @@ router.get('/logout', (req, res, next) => {
   res.redirect('/');
 })
 
+// Google Strategy
+
+router.get(
+  '/google',
+  passport.authenticate('google', {
+    scope: ['profile', 'email'],
+  }),
+);
+
+router.get(
+  '/google/callback',
+  passport.authenticate('google', {
+    failureRedirect: '/auth/failed',
+    successRedirect: '/auth/success'
+  })
+)
+
+// Facebook Strategy
+
+// LinkedIn Strategy
+
+// GitHub Strategy
 
 module.exports = router

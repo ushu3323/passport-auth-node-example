@@ -8,6 +8,9 @@ passport.deserializeUser(function (user, done) {
   done(null, user);
 });
 
+// Setup strategies
+require('./google');
+
 module.exports = {
   passport
 };
