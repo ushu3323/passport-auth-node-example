@@ -1,4 +1,4 @@
 module.exports = {
-  express: require('./express'),
+  express: require('./server'),
   strategy: require('./strategy')
 }
